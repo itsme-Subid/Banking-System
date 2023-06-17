@@ -1,0 +1,31 @@
+model Bank {
+  id            String   @id @default(uuid())
+  name          String
+  contactNumber String?
+  email         String?
+  website       String?
+  branches      Branch[]
+}
+
+model Branch {
+  id            String  @id @default(uuid())
+  name          String
+  location      String
+  contactNumber String?
+  email         String?
+  website       String?
+  bank          Bank    @relation(fields: [bankId], references: [id])
+  bankId        String
+
+  @@index([bankId])
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "mysql"
+  url          = env("DATABASE_URL")
+  relationMode = "prisma"
+}

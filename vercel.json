@@ -1,4 +1,5 @@
 {
   "version": 2,
+  "builds": [{ "src": "src/script.ts", "use": "@now/node" }],
   "routes": [{ "src": "/(.*)", "dest": "/src/script.ts" }]
 }

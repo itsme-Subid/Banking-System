@@ -2,8 +2,16 @@ import express from "express";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import route from "../routes";
+import cors from "cors";
 
 const app = express();
+
+const corsOptions = {
+  origin: "*",
+};
+
+app.use(cors(corsOptions));
+
 dotenv.config();
 app.use(bodyParser.json());
 

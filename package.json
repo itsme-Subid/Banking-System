@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src/script.ts",
     "start": "node dist/script.js",
-    "build": "npm run prisma && tsc",
+    "build": "yarn prisma && tsc",
     "prisma": "prisma generate"
   },
   "dependencies": {

@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "nodemon src/script.ts",
     "start": "node dist/script.js",
-    "build": "tsc",
-    "prisma": "prisma"
+    "build": "npm run prisma && tsc",
+    "prisma": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^4.15.0",

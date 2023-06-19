@@ -2,19 +2,13 @@
 
 This repository contains a backend application for a banking system. It provides an API for managing bank and other related functionalities.
 
-
 ## Features
 
-🔐 Secure
-
-🔥 Blazingly Fast
-
-🩸 Bleeding Edge
-
-✨Holistic
-
-🌐 Web Based
-
+- Highly Secure
+- Blazingly Fast
+- Bleeding Edge
+- Holistic
+- Web Based
 
 ## Problem
 

@@ -2,6 +2,14 @@
 
 This repository contains a backend application for a banking system. It provides an API for managing bank and other related functionalities.
 
+## Features
+
+- Highly Secure
+- Blazingly Fast
+- Bleeding Edge
+- Holistic
+- Web Based
+
 ## Problem
 
 When deploying the backend application on platforms like Netlify or Vercel, you encountered errors related to the build process. Specifically, the build scripts failed with messages such as "No Output Directory named 'dist' found after the Build completed" or similar.
